@@ -1,0 +1,298 @@
+/* To Bring font-family to our project */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Box Sixing:border-box means it keeps all the 
+boxes in the given size. Doesn't get bigger ot
+take more space */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* header position:relative because we can
+keep buttons and textbox and move ourboxes 
+on top of relative item */
+header{
+    width:100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    /* Linear-gradient is nithing but is a way in which we can
+    put over layout like more color or something 
+    on top of layout. You give the loaction in bracket
+    mentioning where you want to achieve the target.
+    here, we have given (to bottom right) means
+    this styling will be applied on bottom right most probably starts from
+    top*/
+
+    /* rgba-red,green,blue, and a is gradient. Either a can be
+    0 or 0.5 or 1 depending on opacity.
+    0-completely transparent
+    1-Completely visible
+    0.5- 50% visible  */
+
+    /*background: linear-gradient(to bottom right, rgba(157, 14, 14, 0), brown);*/
+}
+.header-image{
+    width:100%;
+    position: absolute;
+    /*position: relative;*/
+    top:-20vh;
+    z-index:-1;
+}
+.header-image img{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    font-size: 1rem;
+    align-items: center;
+    margin: 0 40px;
+}
+/*.nav ul li{
+    display: flex;
+    position: absolute;
+    top:-50erm;
+} */
+.nav-bar{
+    display:flex;
+    list-style:none;
+    font-weight: lighter;
+    gap:1.5rem
+}
+
+.get-app, .nav-bar button{
+    background-color: transparent;
+    color: #FFFFFF;
+    box-shadow:0px 2px 4px rgb(238, 0, 79)
+}
+.app-btn,.nav-bar:active{
+    color:blueviolet;
+}
+
+.app-btn,.nav-bar:visited{
+    color:aqua;
+}
+.get-app:hover ,button:hover{
+    cursor: pointer;
+    box-shadow:0px 5px 4px palevioletred;
+}
+
+.get-app{
+    border:none;
+}
+.login-btn{
+    border: none;
+}
+.login-btn a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.signup-btn{
+    border-color: #FFFFFF;
+    padding: 2px 4px;
+    
+}
+
+.signup-btn a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.head{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+.top-header{
+    box-shadow:2px 7px 8px 6px rgb(68, 10, 10);
+} 
+
+.logo{
+    width:10vw;
+    box-shadow:2px 7px 8px rgb(141, 51, 51)
+
+}
+
+.head h3{
+    font-size: 2.1rem;
+    color:whitesmoke;
+    font-weight: 400;
+}
+.search{
+    display: flex;
+    width:55vw;
+    align-items: center;
+    border-radius: 10px;
+    background:white;
+    padding: 5px 4px;
+}
+.search .search-item{
+    display:flex;
+    align-items: center;
+    margin-left:10px ;  
+    border-right:1px solid white;
+    margin:10px; 
+}
+
+.search .search-item input{
+    display: flex;
+    outline:none;
+    border:none;
+    width:400%;
+    padding-left:10px;
+    font-size:11px;
+
+}
+
+.search .search-item:first-child{
+    color:palevioletred;
+    width:30%;
+    
+}
+
+.search .search-item:last-child{
+    width:70%;
+    color:gray;
+}
+/*div .qucik{
+    position: relative;
+    top: -2cm;
+    left: 70px;
+    width: 200px;
+    height: 43px;
+    text-align: left;
+    font: normal normal bold 22px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1
+    
+}
+*/
+h3.q-searches{
+    /*Layout Properties*/
+    position: relative;
+    top: -2.5cm;
+    left: 70px;
+    width: 200px;
+    height: 43px;
+
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 22px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    
+}
+
+.quick input{
+    /*Layout Properties*/
+    position: relative;
+    top: -3.4cm;
+    left: 70px;
+    width: 250px;
+    height: 43px;
+    border:none;
+    overflow: hidden;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 12px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1
+}
+
+section div{
+    display: flex;
+    position: relative;
+    margin-left: 15px;
+    margin-right: -12px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    top:-1cm;
+    border: none;
+    color: #192F60;
+    font: normal normal 13px/8px Poppins;
+    object-fit: cover;
+    z-index:-1;
+    padding: 1vh 1vw;
+
+}
+
+.descrptn-input{
+    position: relative;
+    display: block;
+    object-fit:cover;
+    opacity: 1px;
+    border:none;
+    color: #192F60;
+    align-items: center;
+    width:10vw;
+    align-items: center;
+    border-radius: 10px;
+    background:white;
+   
+}
+
+.section1-1strow,.section1-2ndrow,.breakfast,.lunch,.snacks,.dinner,.drinks,.nightlife{
+    box-shadow: 0px 2px 4px  #120b0b29;
+    
+
+}
+.breakfast,.lunch,.snacks{
+    margin-bottom: 3vw;
+}
+.lunch,.drinks,.snacks,.nightlife{
+    margin-left:5vh;
+}
+
+.section-imgs{
+    align-items: center;
+    
+}
+.descrptn-input{
+   align-items: center;
+   width:auto
+   
+}
+
+section .section-img{
+    box-shadow: 0px 2px 4px 2px #2a050529;
+}
+
+.descrptn-input p{
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 10px;
+    word-wrap: break-word;
+    top: 650px;
+    
+    width: 100px;
+    height: 62px;
+
+}
+
+
+/*.quick-search{
+    
+    border: none;
+    top: 650px;
+    left: 320px;
+    width: 138px;
+    height: 62px;
+    /* UI Properties */
+    /*text-align: center;
+    font: normal normal normal 12px/21px Poppins;
+    letter-spacing: 0px;
+    opacity: 1;     
+}
+*/

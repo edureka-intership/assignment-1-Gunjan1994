@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/69b82dd4c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comamos!</title>
+    
+    <link rel="shortcut icon" href="images/FoodIcon.png">
+</head>
+<body>
+    <!--       HEADER     -->
+    <header>
+        
+        <div class="nav">
+            <div class="app-btn">
+                <!--<p class="get-app">Get The App</p>-->
+                <button type="button" class="get-app">Get The App</button>
+            </div>
+            <div class="nav-bar">
+                <button type="button" class="login-btn" > Login</button>
+                <button type="button" class="signup-btn"> Create An Account</button>
+            </div>
+           <!-- <ul class="nav-bar">
+                <li><button class= "add-rest" type="button"></button>"Add Restaurant"</button></li>
+                <li>Log in</li>
+                <li>Sign Up</li>
+            </ul> -->
+        </div>
+        <div class="head">
+            <img class="logo" src="images/comamoslogo.png" alt="Image Not found">
+            <h3 class="top-header">Find the best Restaurants, cafes and bars</h3>
+            <div class="search">
+               <div class="search-item">
+                 <i class="fa-solid fa-location-dot"></i>
+                 <input type="text" placeholder="Please type a location" id="location" list="locations" required>
+                    <datalist id="locations">
+                        <option value="Sarjapur Road,Bangalore"> Sarjapur Road,Bangalore </option>
+                        <option value="HSR Layout,Bangalore"> HSR Layout,Bangalore </option>
+                        <option value="Kormangala,Bangalore"> Kormangala,Bangalore </option>
+                        <option value="Jay Nagar,Bangalore"> Jay Nagar,Bangalore </option>
+                        <option value="Electronic City, Bangalore"> Electronic City, Bangalore</option> 
+                    </datalist> 
+               </div>
+               <div class="search-item"> 
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                 <input type="text" placeholder="Search for restaurants, cuisine or a dish" id="restaurant" list="searchRestaurant">
+                    <datalist id="searchRestaurant">
+                        <option value="The Big Chill Cakery">The Big Chill Cakery</option>
+                        <option value="Sarjapur Social"> Sarjapur Social</option>
+                        <option value="Hoot">Hoot</option>
+                        <option value="Punjabi Rasoi">Punjabi Rasoi</option>
+                        <option value="Punjabi Rasoi"> Punjabi Rasoi</option> 
+                    </datalist>
+               </div>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="images/shutterstock2.png" height="500px" width="1300px" alt="No image found"> 
+        </div>
+    </header>
+    <!--         quick searches Section    -->
+    <!--          Section 0    -->
+    <div class="quick">
+        <h3 class="q-searches">Quick Searches</h3>
+        <input type="text" id="q-srchplace" placeholder="Discover restaurants by type of meals">
+    </div>
+    <!--          Section 1         -->
+    <section class="section-1">
+        <div class="section1-1strow">
+            <div class="breakfast">
+                <div class="section-imgs">
+                    <img src="images/breakfast.png" height="90px" width="90px"> 
+                </div> 
+                <div class="descrptn-input">
+                    <h5>Breakfast</h5>
+                    
+                        <p>Start your day with exclusive breakfast option</p>
+                    
+                    <!--<input type="text" class="quick-search" placeholder="Start your day with exclusive breakfast option"> -->
+                </div> 
+            </div>
+            <div class="lunch">
+                <div class="section-imgs">
+                    <img src="images/lunch.png" height="90px" width="90px">
+                </div>
+                <div class="descrptn-input">
+                    <h5>Lunch</h5>
+                    <p>Always have a delicious lunch</p>
+                    <!--<input type="text" class="quick-search" placeholder="Always have a delicious lunch">-->
+                </div>
+               </div>
+            <div class="snacks">
+                <div class="section-imgs">
+                    <img src="images/snacks.png" height="90px" width="90px">
+                </div> 
+                <div class="descrptn-input">
+                    <h5>Snacks</h5>
+                    <p>Get a chatpata snacks with us</p>
+                    <!--<input type="text" class="quick-search" placeholder="Get a chatpata snacks with us">-->
+                </div>
+            </div>
+        </div>
+        <div class="section1-2ndrow">
+            <div class="dinner">
+                <div class="section-imgs">
+                    <img src="images/dinner.png" height="90px" width="90px">
+                </div>
+                <div class="descrptn-input">
+                    <h5>Dinner</h5>
+                    <p>What the fork is for dinner?</p>
+                    <!--<input type="text" class="quick-search" placeholder="What the fork is for dinner?">-->
+                </div>  
+                </div>
+            <div class="drinks">
+                <div class="section-imgs">
+                    <img src="images/drinks.png" height="80px" width="80px">
+                </div>
+                <div class="descrptn-input">
+                    <h5>Drinks</h5>
+                    <p>Enjoy a taste of heaven</p>
+                    <!--<input type="text" class="quick-search" placeholder="Enjoy a taste of heaven.">-->
+                </div>
+            </div>
+            <div class="nightlife">
+                <div class="section-imgs">
+                    <img src="images/nightlife.png" height="90px" width="90px">
+                </div>
+                <div class="descrptn-input">
+                    <h5>Nightlife</h5>
+                    <p>you gotta nourish to flourish</p>
+                    <!--<input type="text" class="quick-search" placeholder="you gotta nourish to flourish">-->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
